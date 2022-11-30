@@ -1,0 +1,45 @@
+{
+  "name": "client",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/client/app/src",
+  "projectType": "application",
+  "tags": ["app:client", "scope:client"],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/client"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "client:build",
+        "proxyConfig": "packages/client/app/proxy.conf.json"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "client:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "client:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/client/app/**/*.{ts,tsx}"]
+      }
+    }
+  }
+}

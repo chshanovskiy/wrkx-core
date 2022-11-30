@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "explorer.autoRevealExclude": {
+    "**/node_modules": true
+  },
+  "[typescript][javascript][typescriptreact][javascriptreact][json][jsonc][yaml][html][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

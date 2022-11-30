@@ -1,0 +1,16 @@
+{
+  "name": "client-pages",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/client/pages/src",
+  "projectType": "library",
+  "tags": ["scope:client", "type:client-pages"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/client/pages/**/*.{ts,tsx}"]
+      }
+    }
+  }
+}

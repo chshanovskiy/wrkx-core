@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "language": "en,ru",
+  "ignoreWords": [
+    "buildable",
+    "classname",
+    "clsx",
+    "commitlint",
+    "datasources",
+    "headlessui",
+    "hookform",
+    "immer",
+    "mantine",
+    "nrwl",
+    "openapi",
+    "patronum",
+    "reduxjs",
+    "trpc",
+    "welldone",
+    "wrkx"
+  ]
+}

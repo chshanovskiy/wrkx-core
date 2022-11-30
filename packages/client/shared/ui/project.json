@@ -1,0 +1,16 @@
+{
+  "name": "client-shared-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/client/shared/ui/src",
+  "projectType": "library",
+  "tags": ["scope:client", "type:client-shared"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/client/shared/ui/**/*.{ts,tsx}"]
+      }
+    }
+  }
+}

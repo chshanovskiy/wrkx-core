@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNext",
+    "paths": {
+      "~/wrkx-client/pages": ["packages/client/pages/src/index.ts"],
+      "~/wrkx-client/shared/api": ["packages/client/shared/api/src/index.ts"],
+      "~/wrkx-client/shared/ui": ["packages/client/shared/ui/src/index.ts"],
+      "~/wrkx-server/core": ["packages/server/core/src/index.ts"],
+      "~/wrkx-server/routes": ["packages/server/routes/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

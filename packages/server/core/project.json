@@ -1,0 +1,16 @@
+{
+  "name": "server-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/server/core/src",
+  "projectType": "library",
+  "tags": ["scope:server", "type:server-core"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/server/core/**/*.ts"]
+      }
+    }
+  }
+}

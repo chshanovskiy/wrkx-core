@@ -1,0 +1,16 @@
+{
+  "name": "server-routes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/server/routes/src",
+  "projectType": "library",
+  "tags": ["scope:server", "type:server-routes"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/server/routes/**/*.ts"]
+      }
+    }
+  }
+}
